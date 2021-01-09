@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font_default.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/UserInterface/QuitButton.gd" type="Script" id=2]
+
+[node name="QuitButton" type="Button"]
+margin_top = 90.0
+margin_right = 320.0
+margin_bottom = 176.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = ExtResource( 1 )
+text = "Quit"
+script = ExtResource( 2 )
+
+[connection signal="button_up" from="." to="." method="_on_QuitButton_button_up"]
