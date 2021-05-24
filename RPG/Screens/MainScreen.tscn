@@ -1,0 +1,113 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://UI/background.png" type="Texture" id=1]
+[ext_resource path="res://UI/Title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/QuitButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/ChangeSceneButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Screens/BlueDot.png" type="Texture" id=5]
+
+[node name="MainScreen" type="Control"]
+margin_right = 640.0
+margin_bottom = 320.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="." instance=ExtResource( 2 )]
+margin_left = -36.5
+margin_top = 46.2493
+margin_right = 36.5
+margin_bottom = 86.2493
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -36.5
+margin_top = -37.0
+margin_right = 36.5
+margin_bottom = 37.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" parent="Menu" instance=ExtResource( 4 )]
+margin_right = 73.0
+margin_bottom = 35.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+next_scene_path = "res://Levels/Level01.tscn"
+
+[node name="QuitButton" parent="Menu" instance=ExtResource( 3 )]
+margin_top = 39.0
+margin_right = 73.0
+margin_bottom = 74.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+
+[node name="ControlsTitle" type="VBoxContainer" parent="."]
+margin_left = 40.0
+margin_top = 200.0
+margin_right = 242.0
+margin_bottom = 300.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="ControlsTitle" instance=ExtResource( 2 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 202.0
+margin_bottom = 31.0
+text = "Controls
+"
+align = 0
+
+[node name="Instructions" parent="ControlsTitle" instance=ExtResource( 2 )]
+anchor_left = 0.0
+anchor_right = 0.0
+margin_left = 0.0
+margin_top = 35.0
+margin_right = 202.0
+margin_bottom = 117.0
+text = "w, a, s, d or arrow keys to move
+shift to roll
+space bar to attack
+esc to pause/play the game
+"
+align = 0
+
+[node name="MoveColor" type="Sprite" parent="ControlsTitle"]
+position = Vector2( -16, 40 )
+scale = Vector2( 0.01, 0.01 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="RollColor" type="Sprite" parent="ControlsTitle"]
+position = Vector2( -16, 56 )
+scale = Vector2( 0.01, 0.01 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="AttackColor" type="Sprite" parent="ControlsTitle"]
+position = Vector2( -16, 72 )
+scale = Vector2( 0.01, 0.01 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="PausePlayColor" type="Sprite" parent="ControlsTitle"]
+position = Vector2( -16, 88 )
+scale = Vector2( 0.01, 0.01 )
+texture = ExtResource( 5 )
+centered = false
