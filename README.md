@@ -1,4 +1,6 @@
 # Games
+Link for the demo videos: https://drive.google.com/drive/folders/1Wde2SXOsnjizXhxT_ulMfjsUc1fQerg9?usp=sharing
+
 ### Pacman
 In python using pygame. It is a tutorial on YouTube channel named A Plus Coding with imporvements like adding the power balls (gems) to scare the ghosts, adding timer for the effectiveness of power balls and images to the into, ending and ghosts for the game.
 <br/>Install pygame and numpy for python3 and then run main.py file
@@ -10,6 +12,6 @@ In Godot (game engine). It is a tutorial on YouTube channel named GDQuest with l
 <br/><img src="https://github.com/vjacIIT/Games/blob/main/Coin_Mario/Coin_Mario.png" width="760" height="408">
 
 ### RPG
-In Godot. It is a tutorial on YouTube channel named HeartBeast with no changes as of now. I am planning to add more levels, UI and enemies to it in the coming future.
+In Godot. It is a tutorial on YouTube channel named HeartBeast with addition of userInterface, heart for health, coins for score and portal for multiple levels. I am planning on to add different enemies, better sound effects and few more ideas.
 <br/>Open game in godot and press F5 to start the game.
 <br/><img src="https://github.com/vjacIIT/Games/blob/main/RPG/RPG_demo.png" width="760" height="408">
