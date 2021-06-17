@@ -2,7 +2,7 @@
 Link for the demo videos: https://drive.google.com/drive/folders/1Wde2SXOsnjizXhxT_ulMfjsUc1fQerg9?usp=sharing
 
 ### Pacman
-In python using pygame. It is a tutorial on YouTube channel named A Plus Coding with imporvements like adding the power balls (gems) to scare the ghosts, adding timer for the effectiveness of power balls and images to the into, ending and ghosts for the game.
+In python using pygame. It is a tutorial on YouTube channel named A Plus Coding with improvements like adding the power balls (gems) to scare the ghosts, adding timer for the effectiveness of power balls and images to the into, ending and ghosts for the game.
 <br/>Install pygame and numpy for python3 and then run main.py file
 <br/><img src="https://github.com/vjacIIT/Games/blob/main/Pacman/Pacman_demo.png" width="416" height="467">
 
